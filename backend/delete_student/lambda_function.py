@@ -1,8 +1,10 @@
 import json
 import boto3
+import os
 
-dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('Students')
+table = boto3.resource("dynamodb").Table(
+    os.environ["TABLE_NAME"]
+)
 
 def lambda_handler(event, context):
 
@@ -13,6 +15,6 @@ def lambda_handler(event, context):
     )
 
     return {
-        "statusCode": 200,
+        "statusCode": 201,
         "body": json.dumps({"message": "Student deleted"})
     }

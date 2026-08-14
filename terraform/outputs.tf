@@ -5,3 +5,7 @@ output "dynamodb_table_name" {
 output "aws_region" {
   value = var.aws_region
 }
+
+output "api_url" {
+  value = aws_apigatewayv2_stage.dev.invoke_url
+}

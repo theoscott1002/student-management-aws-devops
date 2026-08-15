@@ -3,6 +3,8 @@ import os
 import boto3
 import uuid
 
+#Ceating Students
+
 table = boto3.resource("dynamodb").Table(
     os.environ["TABLE_NAME"]
 )

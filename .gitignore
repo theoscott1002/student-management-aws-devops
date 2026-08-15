@@ -4,5 +4,15 @@
 *.tfstate.*
 *.tfvars
 *.tfvars.json
+
+# Node
+node_modules/
+frontend/build/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
 crash.log
 crash.*.log

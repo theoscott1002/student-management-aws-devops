@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import StudentForm from "./components/StudentForm";
 import StudentTable from "./components/StudentTable";
 
-const API_BASE = "https://htjhdxy1f2.execute-api.us-east-1.amazonaws.com/dev";
+const API_BASE = "https://s0nebmmbzk.execute-api.us-east-1.amazonaws.com/dev";
 
 function App() {
   const [students, setStudents] = useState([]);
